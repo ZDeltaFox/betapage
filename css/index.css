@@ -1,4 +1,4 @@
-body {
+html, body {
     margin: 20;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;}
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;}
 
 h3 {font-size: 1.7em;}
 button {
