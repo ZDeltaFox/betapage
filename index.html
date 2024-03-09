@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Fox Studios</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="source/images/icons/favicon.ico" type="image/x-icon">
+    <meta name="description" content="KorvusDev Bio Page">
+    <meta name="author" content="KorvusDev">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="source/images/icons/avatar.jpg" class="logo" width="60"></img>
+            <a href="#">Home</a>
+            <a href="#">Info</a>
+            <a href="#">Posts & News</a>
+            <a href="#">Our games</a>
+            <a href="#">Donate us!</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <img src="source/images/banners/banner.png">
+    </section>
+    <hr id="hrType0">
+    <section id="who-are-we">
+        <div class="container">
+            <h1>Welcome to our website!</h1>
+            Welcome
+        </div>
+    </section>
+    <section id="our-games">
+        <div class="cards">
+            <div class="card">
+                <br><img src="source/images/banners/game1.jpg" width="90%"> 
+                <hr> <h3>Friday Night Funkin'</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos labore aperiam maiores, minus facilis fugiat animi eveniet quasi nobis adipisci fugit deserunt repellendus praesentium pariatur, commodi nisi, vitae incidunt.</p>
+                <hr> <button onclick="PlaySoundAndOpenURL('buttonSound01', 'example.com')">Read More...</button>
+            </div>
+            <div class="card">
+                <br><img src="source/images/banners/game2.jpg" width="90%"> 
+                <hr> <h3>Friday Night Funkin'</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos labore aperiam maiores, minus facilis fugiat animi eveniet quasi nobis adipisci fugit deserunt repellendus praesentium pariatur, commodi nisi, vitae incidunt.</p>
+                <hr> <button onclick="PlaySoundAndOpenURL('buttonSound01', 'example.com')">Read More...</button>
+            </div>
+            <div class="card">
+                <br><img src="source/images/banners/game3.jpg" width="90%"> 
+                <hr> <h3>Friday Night Funkin'</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos labore aperiam maiores, minus facilis fugiat animi eveniet quasi nobis adipisci fugit deserunt repellendus praesentium pariatur, commodi nisi, vitae incidunt.</p>
+                <hr> <button onclick="PlaySoundAndOpenURL('buttonSound01', 'example.com')">Read More...</button> <br>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="container">
+            <p>&copy; 2024 Delta Fox Studios. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<audio id="buttonSound01">
+    <source src="source/audio/button01.wav">
+</audio>
+<script>
+    function PlaySoundAndOpenURL(audio, url) {
+        var audio = document.getElementById(audio); audio.play();
+        setTimeout(function() {
+            window.location.href = 'https://' + url;}, 1000)}
+</script>
+</html>

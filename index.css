@@ -1,0 +1,143 @@
+body {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+
+h3 {font-size: 1.7em;}
+button {
+    font-size: 1.3em; 
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid #31313155;
+    box-shadow: 2px 2px 10px #67c2ff;
+    background-color: rgb(165, 249, 255);}
+
+button:hover {background-color: rgb(76, 213, 223)}
+
+.who-are-we {color: rgb(0, 113, 121)}
+.container {
+    max-width: 1400px;
+    margin: auto; 
+    padding: 100;
+    background-color: #67c2ff;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #31313155;
+}
+
+header .logo 
+{
+    margin: 0; 
+    border-radius: 45px;
+    padding: 5px;
+}
+
+header .container {
+    display: flex;
+    max-width: 1400px;
+    margin: auto; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color:#b300ff;}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #BBFF00;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    background: linear-gradient(to right, rgb(211, 211, 211), rgb(241, 254, 255));
+    border-radius: 25px;
+}
+footer p {margin: 20px;}
+
+#hero 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.card {
+    max-width: 700px;
+    background-image: linear-gradient(to bottom, #f3dffc, #e7b9fc);
+    background-color: #f3dffc;
+    border-radius: 15px;
+    margin: 5px 12px;
+    text-decoration: none;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: #b300ff;
+}
+
+.card p {margin: 15px;}
+.card button {margin: 15px;}
+.card img 
+{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+hr {
+    color: #bfb8c1;
+    size: 5px;
+    width: 90%;
+    border-style: solid; 
+}
+
+.cards 
+{
+    flex-direction: row;
+    display: flex;
+    max-width: 1000px;
+    margin: auto; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+#hrType0
+{
+    color: #bfb8c1;
+    size: 10px;
+    width: 20%;
+    border-style: solid; 
+    border-radius: 0px;
+}
+
+@media (min-width: 720px)
+{
+    header .container {
+        display: flex;
+        max-width: 1400px;
+        margin: auto; 
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        background-color:#b300ff;}
+
+    .cards {
+        flex-direction: row;
+        display: flex;
+        max-width: 1200px;
+        margin: auto; 
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;}
+}
