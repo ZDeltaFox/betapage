@@ -24,6 +24,7 @@ button {
 button:hover {background-color: rgb(76, 213, 223)}
 
 #welcome {
+    margin: auto;
     color: rgb(0, 113, 121);
     max-width: 600px;
     align-items: center;
@@ -85,7 +86,12 @@ footer p {margin: 20px;}
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 75vh;
+    border-radius: 20px;
+    
+}
+
+#hero .banner {
+    border-radius: 50px;
 }
 
 #our-games h1 {
@@ -183,6 +189,20 @@ hr {
     padding-right: 10px;
     font-size: 0.7em;
     color: #202020;
+}
+
+.sites h1 
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.site h1
+{
+    font-size: 2em;
+    margin: 20px;
 }
 
 @media (min-width: 720px)
