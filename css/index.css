@@ -39,6 +39,22 @@ button:hover {background-color: rgb(76, 213, 223)}
 #welcome h3 {margin: 20px; font-size: 1.2em;}
 #welcome h4 {margin: 20px; font-size: 1em;}
 
+#who-are-we {
+    margin: auto;
+    color: rgb(0, 113, 121);
+    max-width: 1000px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #31313155;
+    background-image: linear-gradient(to bottom, rgb(189, 240, 255), rgb(120, 214, 243))}
+
+#who-are-we h1 {margin: 20px; font-size: 1.7em; font-weight: bold;}
+#who-are-we h3 {margin: 20px; font-size: 1.2em;}
+#who-are-we h4 {margin: 20px; font-size: 1em;}
+
 .container {
     max-width: 1400px;
     margin: auto; 

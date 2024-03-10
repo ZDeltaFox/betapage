@@ -14,13 +14,13 @@
     <header>
         <nav class="container">
             <img src="source/images/icons/avatar.jpg" class="logo" width="60"></img>
-            <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
             <!--<p><b>|</b></p>-->
-            <a href="#"><i class="fa-solid fa-circle-info"></i> Información</a>
+            <a href="/info.html"><i class="fa-solid fa-circle-info"></i> Información</a>
             <!--<p><b>|</b></p>-->
-            <a href="#"><i class="fa-solid fa-newspaper"></i></i> Noticias</a>
+            <!--<a href="/news.html"><i class="fa-solid fa-newspaper"></i></i> Noticias</a>-->
             <!--<p><b>|</b></p>-->
-            <a href="#"><i class="fa-solid fa-gamepad"></i> Nuestros juegos</a>
+            <a href="/projects"><i class="fa-solid fa-gamepad"></i> Nuestros juegos</a>
             <!--<p><b>|</b></p>-->
             <a href="https://www.patreon.com/korvusdev"><i class="fa-solid fa-circle-dollar-to-slot"></i> ¡Donanos!</a>
             <!--<p><b>|</b></p>-->
@@ -38,7 +38,7 @@
             <hr><h3>Bienvenido a la página de Delta Fox Studios, aquí
                 podrás encontrar información relevante sobre todos nuestros 
                 proyectos, incluidos juegos como Friday Night Funkin', podrás
-                encontrar más información en <a href="https://example.com">este enlace</a>
+                encontrar más información en <a href="info.html">este enlace</a>
             </h3>
             <hr><h1>¿En qué estamos trabajando?</h1>
             <h4>En este momento estamos trabajando en Friday Night Funkin' Ascended,
@@ -55,7 +55,7 @@
     <section id="our-games">
         <br><br><hr><h1>Nuestros mejores proyectos</h1>
         <div class="cards">
-            <div class="card" onclick="PlaySoundAndOpenURL('buttonSound01', 'example.com')">
+            <div class="card" onclick="PlaySoundAndOpenURL('buttonSound01', '/html/projects/friday-night-funkin-ascended/friday-night-funkin-ascended.html')">
                 <br><img src="source/images/banners/game1.jpg" width="90%" class="FirstCard"> 
                 <hr> <h3>Friday Night Funkin'<br><span class="best-game">¡Mejor Juego!</span><br><span class="on-developement">En desarrollo</span>
                     <br><span class="new-game">¡Nuevo!</span></h3> 
@@ -105,7 +105,7 @@
     function PlaySoundAndOpenURL(audio, url) {
         var audio = document.getElementById(audio); audio.play();
         setTimeout(function() {
-            window.location.href = 'https://' + url;}, 1000)}
+            window.location.href = url;}, 0)}
     function ScrollPage(pixels) {window.scrollBy({
     top: pixels, //Deplaza x píxeles hacía abajo
     left: 0,
@@ -124,7 +124,7 @@
 
     function OpenURLInPage(url)
     {
-        window.location.href = '#' + url;
+        window.location.href = window.location.pathname + url;
     }
 }
 </script>
