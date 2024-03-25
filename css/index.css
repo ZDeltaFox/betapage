@@ -35,7 +35,7 @@ button {
     width: 20%;
     text-decoration: underline;}
 
-.bttn2:hover {background-color: #156640}
+.bttn2:hover {background-color: #d8d8d8}
 
 .all-projects i {
     margin: 15px;
@@ -105,6 +105,7 @@ button:hover {background-color: rgb(76, 213, 223)}
 #discord button:hover {background-color: #156640}
 
 #who-are-we {
+    padding-top: 50px;
     margin: auto;
     color: rgb(26, 26, 26);
     max-width: 800px;
@@ -359,11 +360,14 @@ button {
 
     .cards {
         flex-direction: row;
-        display: flex;
+        display: grid;
         max-width: 1200px;
         margin: auto; 
         flex-direction: row;
-        align-items: top;}
+        align-items: top;
+        grid-template-rows: auto;
+        /*grid-template-columns: 1fr 2fr 1fr;*/
+        grid-template-columns: 1fr 1fr 1fr;}
 
     header p {
         margin: auto;
