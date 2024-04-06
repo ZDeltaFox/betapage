@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Fox Studios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="shortcut icon" href="../../../source/images/icons/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Under Construction">
+    <meta name="author" content="KorvusDev">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="../../../source/images/icons/avatar.jpg" class="logo" width="50"></img>
+            <a href="/index.html" id="cur"><i class="fa-solid fa-house"></i> Inicio</a>
+            <!--<p><b>|</b></p>-->
+            <a href="/info.html"><i class="fa-solid fa-circle-info"></i> Información</a>
+            <!--<p><b>|</b></p>-->
+            <!--<a href="/news.html"><i class="fa-solid fa-newspaper"></i></i> Noticias</a>-->
+            <!--<p><b>|</b></p>-->
+            <a href="/projects.html"><i class="fa-solid fa-gamepad"></i> Nuestros juegos</a>
+            <!--<p><b>|</b></p>-->
+            <a href="https://www.patreon.com/korvusdev" target="_blank"><i class="fa-solid fa-circle-dollar-to-slot"></i> ¡Donanos!</a>
+            <!--<p><b>|</b></p>-->
+            <a href="mailto:tucorreo@example.com" target="_blank"><i class="fa-solid fa-envelope"></i> Contáctanos</a>
+            <!--<a href="#"><i class="fa-solid fa-share"></i> Comparte</a>-->
+        </nav>
+    </header>
+    <h1 id="welcomeTxt"><br></h1>
+    <section id="welcome">
+        <div>
+            <h1>Rhythmically Ascended está cocinándose.</h1>
+            <h3>Podrás obtener nuevas noticias pronto.</h3>
+            <hr><img src="../../../source/images/others/Smoker_Animation.webp" class="logo" width="250"></img>
+            
+        </div>
+    </section>
+    </section>
+    <footer>
+        <div id="container">
+            <p>&copy; 2024 Delta Fox Studios. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<audio id="buttonSound01">
+    <source src="source/audio/button01.wav">
+</audio>
+<script>
+    function PlaySoundAndOpenURL(audio, url) {
+        var audio = document.getElementById(audio); audio.play();
+        setTimeout(function() {
+            window.location.href = url;}, 0)}
+    function ScrollPage(pixels) {window.scrollBy({
+    top: pixels, //Deplaza x píxeles hacía abajo
+    left: 0,
+    behavior: 'smooth'});} // Hace que el desplazamiento sea suave
+    function ScrollToConcretClass() {
+    var element = document.querySelector('FirstCard'); // Encuentra el primer elemento con la clase 'Cards'
+    if (element) {
+        elemento.scrollIntoView({
+        behavior: 'smooth' // Hace que el desplazamiento hacia el elemento sea suave
+        });
+    }
+    function OpenURL(url)
+    {
+        window.location.href = 'https://' + url;
+    }
+
+    function OpenURLInPage(url)
+    {
+        window.location.href = window.location.pathname + url;
+    }
+}
+</script>
+</html>
